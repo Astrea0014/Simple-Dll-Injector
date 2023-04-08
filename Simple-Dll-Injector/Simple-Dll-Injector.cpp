@@ -95,7 +95,7 @@ int main() {
 	CHAR szPath[MAX_PATH] = "sudo.dll"; // Name of dll to inject.
 	RelativeToAbsolutePath(szPath, MAX_PATH);
 
-	DWORD dwProcessId = GetProcessId("devenv.exe"); // Getting process id of target.
+	DWORD dwProcessId = GetProcessId("RainbowSix.exe"); // Getting process id of target.
 
 	HANDLE hProcess = OpenProcess(
 		PROCESS_VM_READ | PROCESS_VM_WRITE | PROCESS_VM_OPERATION | // Virtual memory access.
